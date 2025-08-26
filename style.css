@@ -36,19 +36,26 @@ body {
     --cloud: #f4f4fd;
  }
 
+ .container {
+     max-width: 320px;
+     padding-left: 16px;
+     padding-right: 16px;
+     margin-left: auto;
+     margin-right: auto;
+ }
+
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    margin: 0 auto;
-        padding: 0 15px;
-  }
+    .container {
+        max-width: 768px;
+    }
 }
 
 @media screen and (min-width: 1158px) {
-  .container {
-    max-width: 1158px;
-    padding: 0 15px;
-  }
+    .container {
+        max-width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
 
  .title {
@@ -403,6 +410,7 @@ body {
        margin-bottom: 16px;
        margin-top: 72px;
        text-align: center;
+       margin-left: 0;
    }
 
    .socials-list {
@@ -446,7 +454,7 @@ body {
        display: inline-block;
        margin-bottom: 16px;
        text-decoration: none;
-       padding-left: 102px;
+        padding-left: 0;
    }
 
    .footer-studio {
@@ -765,8 +773,8 @@ body {
             transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
                 border 250ms cubic-bezier(0.4, 0, 0.2, 1),
                 fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        }     
-
+        }
+        
    @media screen and (min-width: 768px) {
     .title {
             margin-bottom: 48px;
@@ -1007,6 +1015,7 @@ body {
      display: inline-block;
      margin-bottom: 16px;
      text-decoration: none;
+    padding-left: none;
  }
 
  .footer-studio {
@@ -1094,6 +1103,7 @@ body {
      cursor: pointer;
      margin-left: 24px;
      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            margin-top: auto;
  }
 
  .svg-subscribe {
@@ -1103,6 +1113,10 @@ body {
 
  .modal {
     width: 408px;
+ }
+
+ .subscribe-div {
+    margin-left: 0;
  }
     }
 
@@ -1329,6 +1343,7 @@ body {
              display: inline-block;
              margin-bottom: 16px;
              text-decoration: none;
+            padding-left: 0;
          }
     
          .footer-studio {
@@ -1419,6 +1434,7 @@ body {
              cursor: pointer;
              margin-left: 24px;
              transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+             margin-top: auto;
          }
     
          .svg-subscribe {
@@ -1451,7 +1467,7 @@ body {
                 fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
- .mobile-menu is-open {
+ .mobile-menu {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
@@ -1465,6 +1481,18 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
+
+
+    position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 288px;
+        min-height: 584px;
+        background: #fcfcfc;
+        border-radius: 4px;
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        padding: 72px 24px 24px;
  }
 
  .mobile-menu-close {
@@ -1474,7 +1502,65 @@ body {
     right: 24px;
  }
 
- .mobile-nav {
-    margin-bottom: auto;
+ .address-ul {
+    margin-top: 168px;
  }
 
+ .banner-address-mobile {
+    gap: 24px;
+    font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 120%;
+        letter-spacing: 0.02em;
+ }
+
+ .banner-address-mobile-li {
+   margin-top: 24px;
+font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+ }
+
+ .div-mobile-icon {
+    margin-top: 48px;
+ }
+
+ .mobile-studio {
+    font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 111%;
+        letter-spacing: 0.02em;
+        color: #404bbf;
+ }
+
+ .mobile-dd {
+    font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 111%;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+        margin-top: 24px;
+        gap: 40px;
+ }
+
+[data-modal] {
+    opacity: 0;
+    visibility: hidden;
+    /* pointer-events: none; */
+    transition: opacity 0.3s ease;
+}
+
+[data-modal].is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.DUUDUD {
+    display: none;
+}
