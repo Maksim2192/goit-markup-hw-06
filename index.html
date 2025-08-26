@@ -465,13 +465,13 @@
                     </li>
                 </ul>
             </div>
-            <div class="subscribe-div"> 
+            <div class="subscribe-div is-open" data-modal> 
                 <p class="subscribe">Subscribe</p>
                 <form name="issue_report_form" autocomplete="off" class="form">
                     <label class="label-email">
                         <input class="input-label" type="email" name="email" placeholder="E-mail" />
                     </label>
-                    <button type="submit" class="subscribe-button">Subscribe
+                    <button type="submit" class="subscribe-button" data-modal-open>Subscribe
                         <svg width="24" height="24" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg"
                             class="svg-subscribe">
                             <use href="./images/symbol-defs.svg#Frame-3"></use>
@@ -482,9 +482,9 @@
         </div>
     </footer>
 
- <div class="DUUDUD" >
+ <div class="modal-overlay3" >
     <div class="modal">
-        <button class="button-modal" type="button">
+        <button class="button-modal" type="button" data-modal-close>
             <svg width="8" height="8" class="svg-modal">
                 <use href="./images/symbol.svg#close-black-18dp-2-1"></use>
             </svg>
@@ -539,6 +539,7 @@
  </div>
 
  <script src="./Jc/menu.js"></script>
+ <script src="./Jc/menus.js"></script>
 </body>
 
 </html>
