@@ -42,6 +42,7 @@ body {
      padding-right: 16px;
      margin-left: auto;
      margin-right: auto;
+     justify-items: center;
  }
 
 @media screen and (min-width: 768px) {
@@ -190,7 +191,6 @@ body {
 
 .directly-ul {
         grid-template-columns: repeat(2, 1fr);
-        gap: 24px;
 }
 
                  .directly-div {
@@ -198,14 +198,12 @@ body {
                  }
 
                  .benefits {
-                    margin-top: 96px;
                     margin-bottom: 8px;
                     font-family: "Roboto", sans-serif;
                         font-weight: 700;
                         font-size: 36px;
                         line-height: 111%;
                         letter-spacing: 0.02em;
-                        text-align: center;
                         color: #2e2f42;
                  }
         .paragraph {
@@ -233,7 +231,10 @@ body {
         }
 
         .team-name {
-            gap: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            gap: 72px;
         }
 
            .img-name {
@@ -319,6 +320,7 @@ body {
  }
 
  .portfolio-list {
+    display: flex;
      flex-wrap: wrap;
      column-gap: 24px;
      row-gap: 48px;
@@ -398,7 +400,7 @@ body {
 
    .footer-wrap {
        align-items: baseline;
-       display: inline-block;
+       justify-items: center;
    }
 
    .socials-title {
@@ -408,7 +410,6 @@ body {
        letter-spacing: 0.02em;
        color: var(--WHITE, #ffffff);
        margin-bottom: 16px;
-       margin-top: 72px;
        text-align: center;
        margin-left: 0;
    }
@@ -444,6 +445,7 @@ body {
    }
 
    .logo-footer {
+    margin: auto;
        font-family: "Raleway", sans-serif;
        font-weight: 700;
        font-size: 18px;
@@ -455,6 +457,12 @@ body {
        margin-bottom: 16px;
        text-decoration: none;
         padding-left: 0;
+   }
+
+   .footer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
    }
 
    .footer-studio {
@@ -542,9 +550,9 @@ body {
        border-radius: 4px;
        cursor: pointer;
        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-       margin-top: 16px;
        text-align: center;
-       margin-left: 77px;
+       margin: auto;
+    margin-top: 16px;
    }
 
    .svg-subscribe {
@@ -565,7 +573,10 @@ body {
        background-color: rgba(46, 47, 66, 0.4);
        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
        padding: 72px 24px 24px 24px;
-   }
+
+        opacity: 0;
+            visibility: hidden;
+            pointer-events: none;}
 
    .modal {
        position: absolute;
@@ -774,6 +785,20 @@ body {
                 border 250ms cubic-bezier(0.4, 0, 0.2, 1),
                 fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
+
+        .effective {
+            padding-top: 72px;
+                padding-bottom: 72px;
+                width: 320px;
+        }
+
+        .directly {
+            margin-bottom: 72px;
+        }
+      
+        .footer-socials {
+            margin-top: 72px;
+        }
         
    @media screen and (min-width: 768px) {
     .title {
@@ -844,6 +869,12 @@ body {
         display: block;
         gap: 40px;
         font-style: normal;
+        font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 117%;
+            letter-spacing: 0.04em;
+            color: #434455;
     }
 
          .banner-address-li {
@@ -918,7 +949,8 @@ body {
          .directly-ul {
             display: grid;
                 grid-template-columns: repeat(2, 1fr);
-                gap: 24px;
+                row-gap: 72px;
+                column-gap: 24px;
         }
 
         .directly-div {
@@ -931,13 +963,16 @@ body {
                         font-size: 36px;
                         line-height: 111%;
                         letter-spacing: 0.02em;
-                        text-align: center;
                         color: #2e2f42;
                  }
 
                                  .team-name {
                                     display: grid;
+                                    justify-items: center;
                                     grid-template-columns: repeat(2, 1fr);
+                                    width: 584px;
+                                    margin: auto;
+                                    row-gap: 64px;
                                  }
         
          .portfolio-list {
@@ -963,6 +998,7 @@ body {
  .footer-wrap {
     display: grid;
         grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
  }
 
  .socials-title {
@@ -1117,6 +1153,29 @@ body {
 
  .subscribe-div {
     margin-left: 0;
+    display: block;
+    justify-items: center;
+ }
+
+
+ .effective {
+     width: 768px;
+     padding-top: 112px;
+     padding-bottom: 112px;
+ }
+
+ .issue_report_form {
+    gap: 24px;
+ }
+
+ .logo-footer {
+    margin-left: 0;
+ }
+
+ .footer-socials {
+    margin-top: 0;
+    justify-items: flex-start;
+    margin-right: auto;
  }
     }
 
@@ -1262,6 +1321,7 @@ body {
 
                 .team-name {
                     display: flex;
+                    width: 1158px;
                 }
 
 
@@ -1447,6 +1507,21 @@ body {
                      visibility: visible;
                      pointer-events: auto;
                  }
+
+                                 .effective {
+                                     width: 1440px;
+                                     padding-top: none;
+                                     padding-bottom: none;
+                                 }
+    .team-name {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
+
+        .footer-socials {
+            margin-right: 0;
+        }
  }
 
  /* mobile-menu */
@@ -1516,12 +1591,21 @@ body {
  }
 
  .banner-address-mobile-li {
-   margin-top: 24px;
-font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 120%;
-    letter-spacing: 0.02em;
+    margin-top: 24px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 120%;
+        letter-spacing: 0.02em;
+ }
+ .contact-links {
+    margin-top: 24px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 120%;
+        letter-spacing: 0.02em;
+        color: #434455;
  }
 
  .div-mobile-icon {
@@ -1548,6 +1632,11 @@ font-family: "Roboto", sans-serif;
         gap: 40px;
  }
 
+ .div-accept {
+    display: flex;
+    gap: 7.5px;
+ }
+
 [data-modal] {
     opacity: 0;
     visibility: hidden;
@@ -1561,6 +1650,8 @@ font-family: "Roboto", sans-serif;
     pointer-events: auto;
 }
 
-.DUUDUD {
-    display: none;
+.modal-overlay.is-open {
+opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
 }
