@@ -121,7 +121,7 @@ body {
    }
 
    .effective {
-       background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office\.jpg");
+       background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office\ 1-min.png");
        background-color: #2e2f42;
        color: #fff;
        padding: 188px 0;
@@ -795,6 +795,12 @@ body {
         .directly {
             margin-bottom: 72px;
         }
+
+        .directly.li {
+            margin: 0;
+        }
+
+        
       
         .footer-socials {
             margin-top: 72px;
@@ -973,6 +979,7 @@ body {
                                     width: 584px;
                                     margin: auto;
                                     row-gap: 64px;
+                                    column-gap: 24px;
                                  }
         
          .portfolio-list {
@@ -1177,6 +1184,10 @@ body {
     justify-items: flex-start;
     margin-right: auto;
  }
+
+ .directly {
+     margin: 0;
+ }
     }
 
  @media screen and (min-width: 1158px) {
@@ -1216,6 +1227,7 @@ body {
         .banner-address-li {
             display: flex;
             gap: 40px;
+            padding: 0;
         }
     
         .hero-banner-address-li li {
@@ -1510,8 +1522,8 @@ body {
 
                                  .effective {
                                      width: 1440px;
-                                     padding-top: none;
-                                     padding-bottom: none;
+                                     padding-top: 188px;
+                                     padding-bottom: 188px;
                                  }
     .team-name {
         display: flex;
@@ -1521,6 +1533,10 @@ body {
 
         .footer-socials {
             margin-right: 0;
+        }
+
+        .contact-link {
+            font-size: 16px;
         }
  }
 
@@ -1588,6 +1604,7 @@ body {
         font-size: 20px;
         line-height: 120%;
         letter-spacing: 0.02em;
+        font-style: normal;
  }
 
  .banner-address-mobile-li {
@@ -1597,6 +1614,7 @@ body {
         font-size: 20px;
         line-height: 120%;
         letter-spacing: 0.02em;
+        font-style: normal;
  }
  .contact-links {
     margin-top: 24px;
