@@ -133,6 +133,12 @@ body {
        margin: auto;
    }
 
+@media (min-resolution: 2x) {
+    .effective {
+        background-image: url("../images/people-office\ 1@2x-min.png");
+    }
+}
+
         .order-button {
             margin-top: 72px;
             background-color: #4D5AE5;
